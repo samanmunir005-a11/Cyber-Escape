@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Escape</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="game-container">
+        <h1>Cyber Escape</h1>
+        <p>Your computer is hacked!</p>
+        <p>Solve the security challenges to escape.</p>
+        <button>START GAME</button>
+        <div id="gameStats">
+
+    <span id="lives">❤️ ❤️ ❤️</span>
+     <span id="score">Score: 0</span>
+
+</div>
+        <div class="level" id="level1">
+
+    <h2>LEVEL 1 — PASSWORD BREACH</h2>
+
+    <p class="warning">⚠ SYSTEM LOCKED</p>
+
+    <p>Unauthorized access detected.</p>
+
+    <h3>Find the password using the clues:</h3>
+
+    <p>Clue 1: Password contains 8 characters.</p>
+    <p>Clue 2: It starts with <b>"cy"</b>.</p>
+    <p>Clue 3: The last 3 characters are <b>"123"</b>.</p>
+
+    <input type="text" class="password" id="passwordInput" placeholder="Enter password">
+
+    <button id="unlockButton">UNLOCK</button>
+
+    <p id="message"></p>
+
+</div>
+<div class="level" id="level2">
+
+    <h2> LEVEL 2 — PHISHING ATTACK</h2>
+
+    <p class="warning">⚠ SUSPICIOUS LINKS DETECTED</p>
+
+    <p>One of these URLs is a phishing website.</p>
+
+    <p>Choose the suspicious URL:</p>
+
+    <button class="url-option">https://www.google.com</button>
+
+    <button class="url-option">https://www.paypal-security-login.com</button>
+
+    <button class="url-option">https://www.wikipedia.org</button>
+
+    <p id="phishingMessage"></p>
+
+</div>
+<!-- LEVEL 3 -->
+<div class="level" id="level3">
+
+    <h2>💻 LEVEL 3 — HIDDEN CODE</h2>
+
+    <p class="warning">⚠ SYSTEM FILES CORRUPTED</p>
+
+    <p>Find the hidden security code inside the system information.</p>
+
+    <div class="system-info">
+
+        <p>User: admin</p>
+        <p>Status: compromised</p>
+        <p>Firewall: disabled</p>
+        <p>Encryption: active</p>
+
+        <p>Backup Code: <b>ESC-742</b></p>
+
+    </div>
+
+    <p>Enter the hidden code:</p>
+
+    <input type="text"class="password" id="codeInput" placeholder="Enter code">
+
+    <button id="escapeButton">RESTORE SYSTEM</button>
+
+    <p id="codeMessage"></p>
+
+</div>
+<div id="gameOverScreen">
+
+    <h1>💀 GAME OVER</h1>
+
+    <p>Your system could not be restored.</p>
+
+    <button id="restartButton">TRY AGAIN</button>
+
+</div>
+<!-- VICTORY SCREEN -->
+<div id="victoryScreen">
+
+    <h1>🔓 SYSTEM RESTORED</h1>
+
+    <h2>🎉 YOU ESCAPED! 🎉</h2>
+
+    <p>The computer is secure.</p>
+
+    <h3 id="finalScore">Final Score: 0</h3>
+
+    <p>🏆 SECURITY LEVEL: EXPERT</p>
+
+    <button id="playAgainButton">PLAY AGAIN</button>
+
+</div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
